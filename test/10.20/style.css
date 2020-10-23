@@ -1,0 +1,52 @@
+#1{
+    width: 1000000000px;
+    color: blue;
+}
+
+#img1{
+   width: 500px; 
+}
+
+#img2{
+    height: 200px;
+    border-image: auto;
+}
+
+.pwd{
+    background-color: pink;
+}
+
+.p1{
+    text-indent: 2em;
+}
+
+.p2{
+    text-transform: capitalize;
+}
+
+
+.bg2{
+    width: 400px;
+    height: 400px;
+    background-image: url(./精灵图.png);
+    background-size: cover;
+    background-position:0 100px;
+    
+}
+
+.bg3{
+
+    height: 500px;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg4{
+    
+    width: 4000px;
+    height: 4000px;
+    
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .left{
+            width: 500px;
+            height: 500px;
+            background-image: url(./333.jpg);
+            float: left;
+            border: solid 10px blue;
+            margin-top: 0;
+            margin-left: 50px;
+        }   
+        .right{
+            width: 500px;
+            height: 500px;
+            background-image: url(./333.jpg);
+            float: right;
+            border: solid 10px blue;
+            margin-top: 0;
+            margin-left: 50px;
+
+        }
+        .div2{
+            height: 100px;
+            background-color: yellow;
+        }
+        .contain::after{
+            content: "";
+            display:block;
+            clear: both;
+            width: 0px;
+            height: 0px;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+        a:visited{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="left">1111</div>
+        <div class="right">2222</div>
+    
+        <div class="div2">333</div>
+
+        <a href="#">444</a>
+    </div>
+    
+
+</body>
+</html>

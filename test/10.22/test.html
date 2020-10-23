@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./111.jpeg);
+            background-size: cover;
+            
+        }
+        .div2{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .kuang{
+            width: 400px;
+            height: 250px;
+            border-radius: 2px;
+            position: fixed;
+            top: 100px;
+            left: 500px;
+            background-color: white;
+        }   
+        .div{
+            position: relative;
+            top: 10px;        
+        }
+        .div1{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .button{
+
+            bottom: 10px;
+            height: 200px;
+            text-align: right;
+            margin-right: 20px;
+            margin-top: 70px;
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div2" style="background-color: rgb(0, 0, 0, 0.5);">
+
+    </div>
+    <div class="kuang">
+        <div class="div1">
+            <span style="font-size: 30px;">提示</span>
+            <button style="width: 20px;height:20px;margin-left: 280px;" aria-label="close">
+                X
+            </button>
+        </div>
+
+        <div style="margin-left: 20px;margin-top: 50px;">
+            这是一段信息
+        </div>
+
+        <div class="button">
+            <button style="border: gray;background: none;outline: none;margin-right: 20px;cursor: pointer;">
+                <span>取消</span>
+            </button>
+            <button >
+                <span>确定</span>
+            </button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

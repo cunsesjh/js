@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            
+            background-color: pink;
+            outline-style: double;
+            outline-color: blue;
+            padding: 10px 20px 30px 40px;
+            border: solid 10px red;
+            margin-top: 200px;
+            margin-bottom: 200px;
+
+        }
+
+        .box2{
+            width: 400px;
+            height: 100px;
+            
+            background-color: red;
+            padding: 10px 20px 30px 40px;
+            border: solid 10px red;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            overflow: hidden;
+            
+        }
+
+        .child{
+            font-size: small;
+            margin-top: 10px;
+            background-color: yellow;
+            margin-left: 50px;
+            border:solid 10px blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="box" >1111</div>
+    <div style="overflow: hidden;">
+        <div class="box2" >
+            <div class="child">2222</div>
+        </div>
+    </div>
+    
+</body>
+</html>

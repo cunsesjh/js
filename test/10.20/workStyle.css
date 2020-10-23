@@ -1,0 +1,7 @@
+.pictuer1{
+    width: 700px;
+    height: 700px;
+    box-shadow: 30px 30px 100px pink;
+    border-radius: 350px;
+    background-size: contain;
+}
