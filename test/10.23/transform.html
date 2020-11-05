@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .div{
+            height: 600px;
+            background-color: pink;
+            position: relative;
+            transition: all 2s;
+        }
+        .div img{
+            /* margin: 200px; 
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); */
+            width: 80px;
+            height: 80px;
+            transform-origin: left top;
+            transition: all 2s;
+        }
+        img:hover{
+            transform: rotate(30deg);
+            transform-origin: left top;
+            transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+            transition: all 2s;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <img src="../10.22/app-tb.png" alt="">
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        #box{
+            
+        }
+        .item-lesson{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 200px;
+            width: 400px;
+            height: 200px;
+            margin-bottom: 200px;
+        }
+        .item-lesson img{
+            margin: 0;
+            width: 400px;
+            height: 200px;
+        }
+        .item-lesson h1{
+            margin: 0;
+            font-size: 20px;
+            text-align: center;
+        }
+        .item-lesson h2{
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
+        }
+        .item-lesson button{
+            width: 400px;
+            color:black;
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        function ajax(){
+            $.ajax({
+                url:`https://www.banyuan.club/api/course/detailList`,
+                type: 'GET',
+                data:{
+                    "id":"100006"
+                },
+                success:function(res){
+                    console.log('成功',res);
+                    var arr = res.data.lessonList;
+                    var finalArr = [];
+                    for(var i=0; i<arr.length; i++){
+                        if(arr[i].parentId == 0){
+                            finalArr.push(arr[i]);
+                        }
+                    }
+                    random(finalArr)
+                    
+                },
+                error: function(err){
+                    console.log('失败',err);
+                }
+
+            })
+        }
+        
+
+        //渲染页面
+        function random(data){
+            console.log('sdsdsd', data)
+            var $box = $("#box");
+
+            data.forEach( (item, index) => {
+                $box.append(`
+                    <div class="item-lesson" id="div${index}">
+                        <img src= "${item.coverUrl}" alt="">
+                        <h1>${item.title}</h1>
+                        <h2>${item.summary}</h2>
+                        <button onclick="deleteThis(${index})">删除</button>
+                    </div>`)
+            });
+        }
+        ajax();
+
+        function deleteThis(index){
+            $("#div"+index)
+            var currentdiv = document.getElementById(`div${index}`)
+            currentdiv.parentNode.removeChild(currentdiv)
+        }
+
+    </script>
+
+    
+</body>
+</html>

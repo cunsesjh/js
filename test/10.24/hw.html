@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-image: url(./images/bodyBg.jpg);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .box{
+            display: inline-block;
+            margin-top: 100px;
+            margin-left: 100px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .box2{
+            display: inline-block;
+            margin-top: 120px;
+            margin-left: 300px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .bord1{
+            width: 200px;
+            height: 80px;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            background-color: rgb(0, 1, 1, 0.4);
+            transform: rotate(45deg);
+        }
+        .bord2{
+            width: 200px;
+            height: 80px;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            background-color: rgb(0, 1, 1, 0.4);
+            transform: rotate(135deg);
+        }
+        .bord3{
+            width: 200px;
+            height: 80px;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            background-color: rgb(0, 1, 1, 0.4);
+            transform: rotate(0deg);
+        }
+        .bord4{
+            width: 200px;
+            height: 80px;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            background-color: rgb(0, 1, 1, 0.4);
+            transform: rotate(90deg);
+        }
+        .logo{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50% -50%);
+            transition: all 1s;
+        }
+        .logo:hover{
+            transform: rotate(360deg) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg">
+        <div class="box">
+            <div class="bord1"></div>
+            <div class="bord2"></div>
+            <div class="bord3"></div>
+            <div class="bord4"></div>
+            <img class="logo" src="./images/1.png" alt="">
+            
+        </div>
+
+        <div class="box">
+            <div class="bord1"></div>
+            <div class="bord2"></div>
+            <div class="bord3"></div>
+            <div class="bord4"></div>
+            <img class="logo" src="./images/2.png" alt="">
+        </div>
+
+        <div class="box">
+            <div class="bord1"></div>
+            <div class="bord2"></div>
+            <div class="bord3"></div>
+            <div class="bord4"></div>
+            <img class="logo" src="./images/3.png" alt="">
+        </div>
+
+        <div class="box">
+            <div class="bord1"></div>
+            <div class="bord2"></div>
+            <div class="bord3"></div>
+            <div class="bord4"></div>
+            <img class="logo" src="./images/4.png" alt="">
+        </div>
+
+        <div class="box2">
+            <div class="bord1"></div>
+            <div class="bord2"></div>
+            <div class="bord3"></div>
+            <div class="bord4"></div>
+            <img class="logo" src="./images/5.png" alt="">
+        </div>
+
+        <div class="box2">
+            <div class="bord1"></div>
+            <div class="bord2"></div>
+            <div class="bord3"></div>
+            <div class="bord4"></div>
+            <img class="logo" src="./images/7.png" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>
